@@ -1,0 +1,421 @@
+/* this file is for all styling except text styles */
+
+/* default page styling */
+html {
+    scroll-behavior: smooth;
+    /* max-width: 1440px; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* header styling. desctop */
+
+header {
+    position:absolute;
+    font-size: 16px;
+    /* background-color: whitesmoke; */
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    align-items: center;
+    
+}
+
+#logo {
+    height: 7rem;
+    align-items: center;
+    display: flex;   
+}
+
+.desctop {
+    width: 45rem;
+}
+
+.desctop ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desctop ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    min-width: 9rem;
+    max-width: 10rem;
+    flex: 1 1 ;
+    height: 7rem;
+}
+
+.desctop ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    opacity: 0.9;
+    align-content: center;
+}
+
+.mobile  {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 3rem;
+    position: fixed;
+    opacity: 0.9;
+    right: 1rem;
+    border-radius: 3px;
+    height: 15rem;
+    width: 13rem;
+    background-color:white;
+    z-index: 2;
+}
+
+.mobile ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 0 0 2rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.mobile ul li {
+    list-style-type: none;
+    height: 3rem;
+}
+
+.close {
+    height: 10px;
+}
+
+.mobile ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+}
+
+/* style for menu bar */
+
+#navigation_button {
+    display: none;
+    top: 3rem;
+    right: 1rem;
+    position: fixed;
+}
+
+#close_button {
+    margin: 1rem 1rem 1rem 0;
+}
+
+button {
+    border: none;
+    background: none;
+    z-index: 2;
+}
+
+button img {
+    height: 1.5rem;
+    float: right;
+    opacity: 0.5; 
+}
+
+button img:hover {
+    opacity: 1;
+}
+
+/* about block styling */
+
+#about {
+    border: 1px solid black;
+    position: relative;
+    z-index: -1;
+    /* background: linear-gradient(115deg, #4169b4 70%, #c053bbe3 20%); */
+    background: linear-gradient(115deg,#111b36e3 70%, #e9cb22 20%);
+    /* background: linear-gradient(115deg,rgb(56, 34, 23) 70%, #f3c428 20%); */
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.picture {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+}
+
+ .picture img {
+    margin: 6rem 0 7rem 0;
+    width: 720px;
+
+}
+
+.about {
+    min-width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.about .text {
+    margin: 7rem 5rem 0 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+}
+
+#about .about .text {
+    min-width: 280px;
+    max-width: 600px;
+}
+
+
+/* background block styling */
+
+#background {
+    border: 1px solid black;
+    /* min-height: 35rem; */
+    height: auto;
+    position: relative;
+    padding-bottom: 2rem;
+    min-height: 100vh;
+}
+
+#background .about ul img {
+    height: 100px;
+}
+
+#api img {
+    height: 3rem;
+    border: 2px solid black;
+}
+
+#background .about {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 5rem 0 5rem;
+}
+
+#background .about .text {
+    background-color: #111b36e3;
+    margin: 0;
+}
+
+#background .about ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#background .about button {
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 3rem;
+    width: 12rem;
+    background-color: #f3c428;
+}
+
+/* projects block styling */
+
+#projects {
+    border: 1px solid black;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;  
+}
+
+section {
+    height: 200px; 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+    row-gap: 20px;
+    padding: 0 8rem 0 8rem;
+    text-align: center;
+}
+
+
+#projects .works ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0px 20px;
+    list-style-type: none;
+}
+
+#projects .works ul li {
+    
+    width: 400px;
+    /* flex: 1 1; */
+    height: 400px;
+    margin: 1rem 0 1rem 0;
+}
+
+.project_description {
+    display: none;
+    height: 100%;
+    padding: 0 5% 0 5%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content:center;
+    backdrop-filter: blur(3px);
+}
+
+.project_text {
+    height: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    background-color: #f3c428ef;
+
+}
+
+.project_description img{
+    width: 1.75rem;
+}
+
+.project_description .tech {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+#Works li:hover .project_description {
+    display: flex;
+}
+#Works li:hover .project_description {
+    display: flex;
+}
+#Works li:hover  {
+    transform: scale(1.05);
+    transform-origin: center;
+    transition-duration: 200ms;
+}
+
+
+#CPQ {
+    background-image: url('../media/web_pages/configurator_icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+#TeaLanding {
+    background-image: url('../media/web_pages/tea_icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+#laundryLanding {
+    background-image: url('../media/web_pages/design_icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+#webSiteDesign {
+    background-image: url('../media/web_pages/web_design_icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+/* footer block styling */
+#contact {
+    border: 1px solid black;
+    min-height: 80vh;
+    background: #f3c428;
+}
+
+
+#contact .message {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 8rem 8rem 8rem;
+}
+
+#contact form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#contact input, textarea {
+    display: block;
+}
+
+footer {
+    border: 1px solid black;
+    /* min-height: 16rem; */
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: rgb(224, 224, 224)
+}
+
+aside {
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    right: auto;  
+}
+
+aside ul li {
+    opacity: 0.5;
+}
+
+aside ul li:hover {
+    opacity: 0.9;
+}
+
+aside ul {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style-type: none;
+    row-gap: 1rem;
+}
+
+aside img {
+    width: 1.75rem;
+}
