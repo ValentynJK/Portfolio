@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/medias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    
+
+
+
+
+
+<header>
+<div id='logo'>
+    <h1>  \ V_K /  </h1>
+</div>
+<nav class="desctop">
+    <ul>
+        <li><a href="#about">home</a></li>
+        <li><a href="#background">background</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+</nav>
+
+
+
+</header>
+<button id="navigation_button" onclick="openMenu()"><img src="../media/icons/openMenuButton.png" alt="open"></button>
+<nav class="mobile">
+    <button id='close_button' onclick="closeMenu()"><img src="../media/icons/closeMenuBar.png" alt="close"></button>
+    <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#background">background</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+</nav>
+<div id='about'>
+    <div class = 'content'>
+        <div class = "about">
+            <div class = "text">
+                <h1>Hello,</h1>
+                <h2>my name is <span>Valentyn</span></h2>
+                <br>
+                <h2 class='tagline'>Passionate to simplify hard stuff</h2><br>
+                <p>I am junior software developer with expericne in Low-Code process automation.
+                    Searching for the new oportunities to eliminate routine.
+                </p>
+                </div>
+        </div>
+        <div class = "picture">
+            <img src="../media/illustration/coding3.png" alt="">
+        </div>
+        
+    </div>
+    
+</div>
+<div id="background">
+    <div class='content'>
+        <div class = 'picture'>
+            <img src="..//media/illustration/design-thinking.png" alt="">
+        </div>
+        <div class = 'about'>
+            <div class='text'>
+                <p><span>Hi there,</span></p> 
+                <p>thanks for <span>visiting</span></p><br>
+                <p>My name is Valentyn Kolesnichenko. I have background in Process Engineering and qualified in CAD process design.
+                For a last 2 year I am handling business processes and automation.
+                </p>
+                <p>The biggest achievement so far are developing and implementing CPQ (Configure, Price, Quote) App and Invoicing App for my team to optimize the most consuming business flows: commercial quotation and invoice preparation, document tracking and project managements.</p>
+                <p>For the last couple of year I have been following the path of Full-Stack Web developer</p>
+                <p>See below list of technologies I have learn so far</p>
+            </div>
+            <ul>
+                <li><img src="..//media/icons/html.png" alt="HTML"></li>
+                <li><img src="..//media/icons/css.png" alt="CSS"></li>
+                <li><img src="..//media/icons/js.png" alt="JS"></li>
+                <li><img src="..//media/icons/git.png" alt="JS"></li>
+                
+            </ul>
+            <button id="cv">download CV</button>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<div id="projects">
+    <section>
+        <h1>Check out some of my work</h1>
+        <p>Some project was made as part of my current professional activity, some just for fun =)</p>
+    </section>
+    <div class="works" >
+        <ul id="Works">
+            <li id="CPQ">
+                <div class='project_description'>
+                    <div class="project_text">
+                        <h2>CPQ</h2>
+                        <p>Configure price quote app, buil on Low-Code Ninox platform for distribution company for comprehensive quotation preparation</p>
+                        <br>
+                        <h3>Technologies:</h3>
+                        <div class = "tech">
+                            <p>Low Code</p>
+                            <p>|</p>
+                            <p>REST API</p>
+                            <p>|</p>
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                            
+                        </div>
+                        <br>
+                        <a href=""><img src="../media/icons/external link.png" alt=""></a>
+                    </div>
+                    
+                    
+                </div>
+            </li>
+            <li id="TeaLanding">
+                <div class='project_description'>
+                    <div class='project_text'>
+                        <h2>Tea Cozzy</h2>
+                        <p>Landing page for Tea store. One of Codecademy portfolio projects</p>
+                        <h3>Technologies:</h3>
+                        <div class = "tech">
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                        </div>
+                        <br>
+                    <a href="https://valentynjk.github.io/Tea_Cozy/" target="_blank"><img src="../media/icons/external link.png" alt=""></a>
+                    </div>
+                    
+            </li>
+            <li id="laundryLanding">
+                <div class='project_description'>
+                    <div class='project_text'>
+                        <h2>Laundry Technical Design</h2>
+                        <p>Landing page for compamny provides servises in the field of key-solution for professional laundry industry</p>
+                        <h3>Technologies:</h3>
+                        <div class = "tech">
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                        </div>
+                        <br>
+                    <a href="https://valentynjk.github.io/LaundryDesign/" target="_blank"><img src="../media/icons/external link.png" alt=""></a>
+                </div>
+                    
+            </li>
+            <li id='webSiteDesign'>
+                <div class='project_description'>
+                    <div class='project_text'>
+                        <h2>Web Site Design</h2>
+                        <p>Web site design guidance. First web site was created in </p>
+                        <h3>Technologies:</h3>
+                        <div class = "tech">
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                        </div>
+                        <br>
+                    <a href="https://valentynjk.github.io/Website_Design_System/" target="_blank"><img src="../media/icons/external link.png" alt=""></a>
+                </div>
+            
+            </li>
+            <!-- <li id='findHat'>
+                COMMING SOON
+            </li> -->
+        </ul>
+    </div>
+</div>
+<div id='contact'>
+    <section >
+        <h1>Contact Me</h1>
+        <p>Would like to wrigt me, ask question, discuss somthing or just say hello? You are welcome to use the form below</p>
+    </section>
+    <div class='message'>
+        <form action="https://formspree.io/f/mqknknak" method="POST">
+            <label for="">
+                E-mail
+                <input type="email" class='email' name="email" id=""/>
+            </label>
+            <label for="">
+                Subject
+                <input type="text" class='subject' name="subject" id=""/>
+            </label>
+                Message
+                <textarea class='_message' name="message" id="" cols="30" rows="10"></textarea>
+            <label>
+                <div class="status"></div>
+                <button onclick="sendMessage()" type='submit' class='submit'>Send</button>
+        </form>
+        
+</div>
+</div>
+
+
+<footer>
+
+
+
+<aside>
+    <ul>
+        <li><a href="https://github.com/ValentynJK" target="_blank"><img src="../media/icons/gitHub.png" alt="git"></a></li>
+        <li><a href="https://www.linkedin.com/in/valentyn-kolesnichenko/" target="_blank"><img src="../media/icons/linked.png" alt="linked"></a></li>
+        <li><a href="valentynejk@gmail.com" target="_blank"><img src="../media/icons/gmail.png" alt="email"></a></li>
+        <li><a href="" target="_blank"><img src="../media/icons/insta.png" alt="insta"></a></li>
+        
+    </ul>
+</aside>
+<div>
+    <p>Designed and built by Valentyn Kolesnichenko. 2021</p>
+</div>
+
+
+</footer>
+
+
+
+
+<script src="../scripts/scripts.js" defer></script>
+
+</body>
+</html>
+
+
