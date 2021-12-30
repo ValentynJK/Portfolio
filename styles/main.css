@@ -15,7 +15,6 @@ body {
     background-color: white;
 }
 
-
 /* header styling. desctop */
 
 header {
@@ -28,14 +27,27 @@ header {
     width: 100%;
     z-index: 1;
     opacity: 1;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 #logo {
     height: 7rem;
     align-items: center;
-    display: flex;   
+    display: flex;
+    min-width: 200px;
+    justify-content: center;
+}
+
+#logo h1 {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#logo:hover h1 {
+    background-color: rgba(255, 255, 255, 0.151);
+    transform: scale(1.05);
+    transform-origin: center;
+    transition-duration: 200ms;
 }
 
 .desctop {
@@ -56,7 +68,15 @@ header {
     min-width: 9rem;
     max-width: 10rem;
     flex: 1 1 ;
-    height: 7rem;
+    height: 6rem;
+    border-radius: 10px;
+}
+
+.desctop ul li:hover  {
+    background-color: rgba(255, 255, 255, 0.151);
+    transform: scale(1.05);
+    transform-origin: center;
+    transition-duration: 200ms;
 }
 
 .desctop ul li a {
@@ -171,7 +191,6 @@ button img:hover {
  .picture img {
     margin: 6rem 0 7rem 0;
     width: 720px;
-
 }
 
 .about {
@@ -196,12 +215,10 @@ button img:hover {
     max-width: 600px;
 }
 
-
 /* background block styling */
 
 #background {
     border: 1px solid black;
-    /* min-height: 35rem; */
     height: auto;
     position: relative;
     padding-bottom: 2rem;
@@ -264,7 +281,6 @@ section {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    
     row-gap: 20px;
     padding: 0 8rem 0 8rem;
     text-align: center;
@@ -275,14 +291,13 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     gap: 0px 20px;
     list-style-type: none;
 }
 
 #projects .works ul li {
-    
     width: 400px;
-    /* flex: 1 1; */
     height: 400px;
     margin: 1rem 0 1rem 0;
 }
@@ -298,14 +313,13 @@ section {
 }
 
 .project_text {
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     row-gap: 5px;
     background-color: #f3c428ef;
-
 }
 
 .project_description img{
@@ -332,28 +346,28 @@ section {
 
 
 #CPQ {
-    background-image: url('media/web_pages/configurator_icon.png');
+    background-image: url('../media/web_pages/configurator_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
 }
 
 #TeaLanding {
-    background-image: url('media/web_pages/tea_icon.png');
+    background-image: url('../media/web_pages/tea_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
 }
 
 #laundryLanding {
-    background-image: url('media/web_pages/design_icon.png');
+    background-image: url('../media/web_pages/design_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
 }
 
 #webSiteDesign {
-    background-image: url('media/web_pages/web_design_icon.png');
+    background-image: url('../media/web_pages/web_design_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
@@ -365,7 +379,6 @@ section {
     min-height: 80vh;
     background: #f3c428;
 }
-
 
 #contact .message {
     max-width: 1280px;

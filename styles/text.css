@@ -10,10 +10,11 @@ body {
 
 #logo h1 {
     font-size: 3rem;
+    font-weight: 600;
 }
 
 nav {
-    
+    font-weight: 600;
     font-size: 1.25rem;
 }
 .desctop ul li a{
@@ -43,12 +44,13 @@ header {
 }
 
 .about .text h2.tagline {
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     font-size: 1.75rem;
 }
 
 .about .text p {
     color: white;
+    font-size: 1.25em;
     line-height: 1.5rem;
 }
 
