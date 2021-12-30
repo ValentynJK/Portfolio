@@ -332,28 +332,28 @@ section {
 
 
 #CPQ {
-    background-image: url('../media/web_pages/configurator_icon.png');
+    background-image: url('media/web_pages/configurator_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
 }
 
 #TeaLanding {
-    background-image: url('../media/web_pages/tea_icon.png');
+    background-image: url('media/web_pages/tea_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
 }
 
 #laundryLanding {
-    background-image: url('../media/web_pages/design_icon.png');
+    background-image: url('media/web_pages/design_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
 }
 
 #webSiteDesign {
-    background-image: url('../media/web_pages/web_design_icon.png');
+    background-image: url('media/web_pages/web_design_icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
