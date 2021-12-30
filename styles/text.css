@@ -3,7 +3,7 @@ body {
 }
  
  
- h1 {
+h1 {
 
     font-size: 16px;
 }
@@ -35,7 +35,8 @@ header {
 
 .about .text span{
     color: white;
-    font-size: 3rem
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 .about .text h2 {
@@ -51,10 +52,6 @@ header {
 .about .text p {
     color: white;
     font-size: 1.25em;
-    line-height: 1.5rem;
-}
-
-#background .about .text p {
     line-height: 1.5rem;
 }
 

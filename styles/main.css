@@ -397,7 +397,6 @@ section {
 
 footer {
     border: 1px solid black;
-    /* min-height: 16rem; */
     min-height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -411,14 +410,23 @@ aside {
     position: fixed;
     bottom: 40px;
     left: 40px;
-    right: auto;  
+    right: auto;
+    
 }
 
 aside ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: white;
     opacity: 0.5;
 }
 
 aside ul li:hover {
+    background-color: #f3c428;;
     opacity: 0.9;
 }
 
