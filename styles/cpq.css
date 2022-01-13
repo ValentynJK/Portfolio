@@ -1,0 +1,154 @@
+header {
+    position: relative;
+    background: linear-gradient(115deg,#111b36e3 70%, #e9cb22 20%);
+    display: flex;
+    justify-content: center;
+}
+
+#logo a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slideNumber {
+    display: none;
+}
+
+.slideNumber  img {
+    min-width: 280px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .slideNumber  img {
+        width: 1500px;
+    }
+    
+}
+
+footer {
+    position: relative;
+}
+
+/* back and forward buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #e9cb22;
+}
+
+.numberText {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: #e9cb22;
+}
+
+
+#cpq {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+section {
+    height: auto;
+    text-align: center;
+}
+
+section .image img {
+    width: 100px;
+}
+
+#cpq .mainInfo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 20px 20px;
+}
+
+.keyValues {
+    width: 30%;
+}
+
+
+
+
+.mainInfo .sectionHead {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.sectionName {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: start;
+    padding-left: 20px;
+    background-color: #e9cb22;
+}
+
+
+.featuresList {
+    padding: 1rem;
+    color: white;
+    text-align: start;
+    border: 1px solid black;
+    width: 400px;
+    background-color: #111b36be;
+}
+
+.featuresList p {
+
+}
+
+.featuresList ul {
+    width: 80%;
+    margin-left: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #cpq .mainInfo {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .keyValues {
+        width: 300px;
+    }
+    .featuresList {
+        width: 270px;
+    }
+    
+}
