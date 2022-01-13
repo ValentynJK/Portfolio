@@ -1,19 +1,22 @@
-let slideIndex = 1;
+const galleryImage = document.querySelector('.gallery-image');
+const galleryImages = document.querySelectorAll('.gallery-image img');
 
+// Buttons
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+const prevButton = document.querySelector('#prevButton');
+const nextButton = document.querySelector('#nextButton');
 
-const showSlides = (index) => {
-    let i;
-    let slides = document.getElementsByClassName('slideNumber');
-    if (index > slides.length) {slideIndex = 1}
-    if (index < 1) {slideIndex = slides.length}
+// Counter
 
-    for (i=0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-        slides[slideIndex-1].style.display = "flex";
-    }
- }
-showSlides(slideIndex);
+let counter = 1;
+const size = galleryImages[0].clientWidth; // returns width of the first image
+console.log(size)
+galleryImage.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+// Button listeners
+
+nextButton.addEventListener('click', ()=> {
+  galleryImage.style.transition = "transform 0.4s ease-in-out";
+  counter++;
+  galleryImage.style.transform = 'translateX(' + (-size * counter) + 'px)';
+})
