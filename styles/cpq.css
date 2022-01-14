@@ -10,61 +10,50 @@ header {
     color: white;
 }
 
-/* main {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.slideNumber {
-    display: none;
-    border: 1px solid black;
-    max-width: 1200px;
-}
-*/
-
 .gallery {
-    width: 60%;
-    margin: auto;
-    border: 5px solid black;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    /* border: 5px solid black; */
+    overflow: hidden;
+    position: relative;
 }
 
 .gallery-image {
     display: flex;
-    width: 100%;
-    height: 500px;
-
 }
 
 .gallery-image img {
-    /* width:1180px;
-    height: 620px; */
-    /* min-width: 280px; */
+    /* width: auto; */
+    width: 100%;
+    /* height: auto; */
 }
 
+#prevButton {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 2rem;
+}
 
+#nextButton {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 2rem;
+}
 
 footer {
     position: relative;
 }
-
-/* back and forward buttons */
-
-/* .prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-} */
 
 .next {
     right: 0;
@@ -75,16 +64,6 @@ footer {
 .next:hover {
     background-color: #e9cb22;
 }
-
-/* .numberText {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    background-color: #e9cb22;
-} */
-
 
 #cpq {
     position: relative;
@@ -113,9 +92,6 @@ section .image img {
     width: 30%;
 }
 
-
-
-
 .mainInfo .sectionHead {
     display: flex;
     justify-content: start;
@@ -131,7 +107,6 @@ section .image img {
     padding-left: 20px;
     background-color: #e9cb22;
 }
-
 
 .featuresList {
     padding: 1rem;
