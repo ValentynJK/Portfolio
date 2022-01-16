@@ -3,7 +3,6 @@
 /* default page styling */
 html {
     scroll-behavior: smooth;
-    /* max-width: 1440px; */
 }
 
 * {
@@ -13,7 +12,8 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: rgba(96, 171, 214, 0.05);
+    overflow-x: hidden;
 }
 
 /* header styling. desctop */
@@ -21,7 +21,6 @@ body {
 header {
     position:absolute;
     font-size: 16px;
-    /* background-color: whitesmoke; */
     height: 7rem;
     display: flex;
     justify-content: space-between;
@@ -160,12 +159,9 @@ button img:hover {
 /* about block styling */
 
 #about {
-    border: 1px solid black;
     position: relative;
     z-index: -1;
-    /* background: linear-gradient(115deg, #4169b4 70%, #c053bbe3 20%); */
     background: linear-gradient(115deg,#111b36e3 70%, #e9cb22 20%);
-    /* background: linear-gradient(115deg,rgb(56, 34, 23) 70%, #f3c428 20%); */
 }
 
 .content {
@@ -219,7 +215,6 @@ button img:hover {
 /* background block styling */
 
 #background {
-    border: 1px solid black;
     height: auto;
     position: relative;
     padding-bottom: 2rem;
@@ -232,21 +227,21 @@ button img:hover {
 
 #api img {
     height: 3rem;
-    border: 2px solid black;
 }
 
 #background .about {
     display: flex;
     flex-flow: column nowrap;
-    row-gap: 20px;
+    gap: 20px;
     min-width: 320px;
     max-width: 800px;
     margin: 0 5rem 0 5rem;
 }
 
 #background .about .text {
-    background-color: #111b36e3;
+    background-color: #111b36be;
     margin: 0;
+    box-shadow: -5px 5px 5px black;
 }
 
 #background .about ul {
@@ -259,7 +254,6 @@ button img:hover {
 }
 
 #background .about button {
-    border: 1px solid black;
     border-radius: 2px;
     height: 3rem;
     width: 12rem;
@@ -269,7 +263,6 @@ button img:hover {
 /* projects block styling */
 
 #projects {
-    border: 1px solid black;
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -282,7 +275,7 @@ section {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    row-gap: 20px;
+    gap: 20px;
     padding: 0 8rem 0 8rem;
     text-align: center;
 }
@@ -303,24 +296,41 @@ section {
     margin: 1rem 0 1rem 0;
 }
 
+.workName {
+    position: relative;
+    top: 90%;
+    margin: 0 auto;
+    width: 80%;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #111b36be;
+    color: white
+}
+
+
 .project_description {
     display: none;
-    height: 100%;
-    padding: 0 5% 0 5%;
+    height: inherit;
+    /* padding: 0 5% 0 5%; */
+    width: inherit;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     backdrop-filter: blur(3px);
 }
 
 .project_text {
-    height: 80%;
+    height: 90%;
+    width: 90%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    row-gap: 5px;
+    gap: 5px;
     background-color: #f3c428ef;
+    box-shadow: -10px 10px #111b36be;
+    padding: 0 10px 0 10px;
+    text-align: center;
 }
 
 .project_description img{
@@ -336,15 +346,19 @@ section {
 #Works li:hover .project_description {
     display: flex;
 }
-#Works li:hover .project_description {
+/* #Works li:hover .project_description {
     display: flex;
+} */
+
+#Works li:hover .workName {
+    display: none;
 }
+
 #Works li:hover  {
     transform: scale(1.05);
     transform-origin: center;
     transition-duration: 200ms;
 }
-
 
 #CPQ {
     background-image: url('../media/web_pages/configurator_icon.png');
@@ -376,9 +390,11 @@ section {
 
 /* footer block styling */
 #contact {
-    border: 1px solid black;
     min-height: 80vh;
     background: #f3c428;
+    z-index: -1;
+    padding: 2rem 0 2rem 0;
+    
 }
 
 #contact .message {
@@ -387,17 +403,42 @@ section {
     padding: 0 8rem 8rem 8rem;
 }
 
-#contact form {
+.message label {
     display: flex;
     flex-flow: column nowrap;
+    /* border: 1px solid black; */
 }
 
-#contact input, textarea {
-    display: block;
+.message form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+._email, 
+._subject {
+    min-width: 285px;
+    max-width: 500px;
+    flex-grow: 1;
+}
+
+.__message {
+    width: 100%;
+}
+
+.submit {
+    
+    width: 200px;
+    height: 75px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+    color: #111b36;
 }
 
 footer {
-    border: 1px solid black;
     min-height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -435,9 +476,10 @@ aside ul {
     display: flex;
     flex-flow: column nowrap;
     list-style-type: none;
-    row-gap: 1rem;
+    gap: 1rem;
 }
 
 aside img {
     width: 1.75rem;
 }
+

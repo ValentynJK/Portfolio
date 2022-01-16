@@ -14,19 +14,25 @@ header {
     width: 80%;
     height: auto;
     margin: 0 auto;
-    /* border: 5px solid black; */
     overflow: hidden;
     position: relative;
 }
 
 .gallery-image {
     display: flex;
+    height: auto;   
 }
 
 .gallery-image img {
     /* width: auto; */
     width: 100%;
-    /* height: auto; */
+    max-height: 930px;
+}
+
+@media only screen and (min-width: 2000px) {
+    .gallery {
+        width: 1550px;
+    }    
 }
 
 #prevButton {
@@ -35,9 +41,13 @@ header {
     z-index: 10;
     left: 5%;
     color: black;
-    opacity: 0.7;
+    opacity: 0.6;
     cursor: pointer;
     font-size: 2rem;
+}
+
+#prevButton:hover {
+    opacity: 0.9;
 }
 
 #nextButton {
@@ -46,9 +56,29 @@ header {
     z-index: 10;
     right: 5%;
     color: black;
-    opacity: 0.7;
+    opacity: 0.6;
     cursor: pointer;
     font-size: 2rem;
+}
+
+
+
+#nextButton:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 768px){
+    #prevButton,
+    #nextButton {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #prevButton,
+    #nextButton {
+        font-size: 1rem;
+    }
 }
 
 footer {
@@ -108,24 +138,31 @@ section .image img {
     background-color: #e9cb22;
 }
 
+.featuresListParent {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+}
+
+
 .featuresList {
     padding: 1rem;
     color: white;
     text-align: start;
-    border: 1px solid black;
-    width: 400px;
+    width: 500px;
     background-color: #111b36be;
 }
 
-.featuresList p {
-
+.featuresList:hover {
+    transform: scale(1.05);
+    transform-origin: center;
+    transition-duration: 200ms;
 }
 
 .featuresList ul {
     width: 80%;
     margin-left: 2rem;
 }
-
 
 @media only screen and (max-width: 768px) {
     #cpq .mainInfo {
@@ -138,5 +175,8 @@ section .image img {
     .featuresList {
         width: 270px;
     }
-    
+}
+
+#contact {
+    min-height: auto;
 }

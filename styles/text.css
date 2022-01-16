@@ -4,7 +4,6 @@ body {
  
  
 h1 {
-
     font-size: 16px;
 }
 
@@ -52,7 +51,7 @@ header {
 .about .text p {
     color: white;
     font-size: 1.25em;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
 }
 
 section h1 {
@@ -74,5 +73,63 @@ section p {
 }
 
 #background .about button {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+}
+
+.project_text {
+    font-size: 1rem;
+}
+
+#contact section p {
+    font-size: 1.25rem;
+}
+
+input, 
+textarea {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+    
+}
+
+input {
+    height: 75px;
+    font-weight: 600;
+}
+
+textarea {
+    height: 200px;
+    overflow-y:scroll;
+    font-weight: 400;
+    resize: none;
+}
+
+label {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+/* before elements for mail verificatio and text styling*/
+
+.verification {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.valid:before {
+    content: "✓";
+    color: green;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.invalid:before {
+    content: "x";
+    color: red;
+    font-weight: bold;
+    padding-right: 10px;
 }

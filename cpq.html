@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    
     <title>CPQ</title>
 </head>
 <body>
@@ -21,7 +20,7 @@
         <h1>  <a href="index.html"> \ VK / </a>  </h1>
     </div>
 </header>
-<!-- <br><br> -->
+<br><br>
 <main class='gallery'>
     <!-- Buttons -->
     <i class="fas fa-arrow-left" id='prevButton'></i>
@@ -38,14 +37,6 @@
 
 
     </div>
-
-    
-    <!-- Next and previous buttons
-   <button id="prevButton">Prev</button>
-   <button id="nextButton">Next</button> -->
-
-   
-
 </main>
 <br>
 
@@ -99,26 +90,36 @@
                 <h2>key features & principles</h2>
             </div>
         </div>
-        <article class="featuresList">
-            <h4>Overall features</h4>
-            <ul>
-                <li>Customer and Project management</li>
-                <li>Quotation and configuration module</li>
-                <li>Integrated pdf printer and OneDrive file storage</li>
-                <li>E-mail module</li>
-                <li>Excel export data generation</li>
+        <div class="featuresListParent">
+            <article class="featuresList">
+                <h4>Overall features</h4>
+                <ul>
+                    <li>Customer and Project management</li>
+                    <li>Quotation and configuration module</li>
+                    <li>Integrated pdf printer and OneDrive file storage</li>
+                    <li>E-mail module</li>
+                    <li>Excel export data generation</li>
+                </ul>
+            </article>
+            <article class="featuresList">
+                <h4>Overall principles</h4>
+                <ul>
+                    <li>Strong customer related data</li>
+                    <li>Hight flexibility for configuration and pricing</li>
+                    <li>Protection against inappropriate changes</li>
+                    <li>Structuring and limitation of working flow</li>
             </ul>
-        </article>
-        <article class="featuresList">
-            <h4>Overall principles</h4>
-            <ul>
-                <li>Strong customer related data</li>
-                <li>Hight flexibility for configuration and pricing</li>
-                <li>Protection against inappropriate changes</li>
-                <li>Structuring and limitation of working flow</li>
-        </ul>
-        </article>
-        <article class="featuresList">
+            </article>
+            <article class="featuresList">
+                <h4>Integrations list</h4>
+                <ul>
+                    <li>OneDrive. Quotation print and save;</li>
+                    <li>OutLook. Generation and sending emails in few clicks.</li>
+                    <li>CloudConvert. Convert pdf to fit the REST API file size requirements</li>
+                </ul>
+            </article>
+        </div>
+            <article class="featuresList">
             <h4>Quotation module features</h4>
             <ul>
                 <li>Product database divides into two separate tree structured: databases for main and for support products;</li>
@@ -131,14 +132,6 @@
                 <li>Economic indicators for every quotation;</li>
                 <li>Printing and mail sending quotations within CPQ;</li>
                 <li>Storing links for printed pdf and sent emails; </li>
-        </ul>
-        </article>
-        <article class="featuresList">
-            <h4>Integrations list</h4>
-            <ul>
-                <li>OneDrive. Quotation print and save;</li>
-                <li>OutLook. Generation and sending emails in few clicks.</li>
-                <li>CloudConvert. Convert pdf to fit the REST API file size requirements</li>
         </ul>
         </article>
     </section>
@@ -175,16 +168,39 @@
         </article>
     </section>
 </div>
-
-
+<br>
+<div id='contact'>
+    <section>
+        <h1>Contact Me</h1>
+        <p>Would like to wrigt me, ask question, discuss somthing or just say hello? You are welcome to use the form below</p>
+    </section>
+    <div class='message'>
+        <form action="https://formspree.io/f/mqknknak" method="POST">
+            <label class='_email' for="">
+                Your email
+                <input type="email" class='email' name="email" id="" placeholder="Enter your email adress"/>
+            </label>
+            <label class='_subject' for="">
+                Your subject
+                <input type="text" class='subject' name="subject" id="" placeholder="Enter Subject"/>
+            </label>
+            <label class='__message' for="">
+                Your message
+                <textarea class='_message' name="message" id="" cols="30" rows="10" placeholder="Hello, I am writing you to disscuss a new project. Waiting forward for your reply. Best regards"></textarea>
+            <label>
+                <div class="status"></div>
+                <br>
+                <button onclick="sendMessage()" type='submit' class='submit'>Send</button>
+        </form>
+  
+</div>
 <footer>
     <aside>
         <ul>
             <li><a href="https://github.com/ValentynJK" target="_blank"><img src="media/icons/gitHub.png" alt="git"></a></li>
             <li><a href="https://www.linkedin.com/in/valentyn-kolesnichenko/" target="_blank"><img src="media/icons/linked.png" alt="linked"></a></li>
             <li><a href="valentynejk@gmail.com" target="_blank"><img src="media/icons/gmail.png" alt="email"></a></li>
-            <li><a href="" target="_blank"><img src="media/icons/insta.png" alt="insta"></a></li>
-            
+            <li><a href="" target="_blank"><img src="media/icons/insta.png" alt="insta"></a></li>      
         </ul>
     </aside>
     <div>

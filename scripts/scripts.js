@@ -50,28 +50,28 @@ console.log('It works')
 // To validate the email input
     
     if(email.length > 5 && email.includes('@') && email.includes('.') ) {
-        statusElement.append('<p>Email is valid</p>');
+        statusElement.append('<p class="valid verification">Email is valid</p>');
     } else {
         event.preventDefault();
-        statusElement.append('<p>Email is not valid</p>');
+        statusElement.append('<p class="invalid verification">Email is not valid</p>');
     }
 
 // to validate the subject input field
 
     if(subject.length >=2) {
-        statusElement.append('<p>Subject is valid</p>');
+        statusElement.append('<p class="valid verification">Subject is valid</p>');
     } else {
         event.preventDefault();
-        statusElement.append('<p>Subject is not valid</p>');
+        statusElement.append('<p class="invalid verification">Subject is not valid</p>');
     }
 
 // to validate message body input
 
     if(message.length >=20) {
-        statusElement.append('<p>Message is valid</p>');
+        statusElement.append('<p class="valid verification">Message is valid</p>');
     } else {
         event.preventDefault();
-        statusElement.append('<p>Message is not valid</p>');
+        statusElement.append('<p class="invalid verification">Message is not valid</p>');
     }
 
     email = '';
@@ -79,12 +79,3 @@ console.log('It works')
     message = '';
 
 }
-
-// event listener to release the info about the project
-
-// const test = document.getElementById('Works');
-
-// test.addEventListener('click', function(event) {
-//     event.$('project_description').style.display = "flex"
-    
-// })

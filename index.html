@@ -68,9 +68,10 @@
                 <p>My name is Valentyn Kolesnichenko. I have background in Process Engineering and qualified in CAD process design.
                 For a last 2 year I am handling business processes and automation.
                 </p>
-                <p>The biggest achievement so far are developing and implementing CPQ (Configure, Price, Quote) App and Invoicing App for my team to optimize the most consuming business flows: commercial quotation and invoice preparation, document tracking and project managements.</p>
+                <p>The biggest achievements so far are developing and implementing CPQ app (Configure, Price, Quote) and SOPI app (Sales Ordering Proforming and Invoicing)
+                    for my team to optimize the most consuming business flows: commercial quotations, invoice preparation, document tracking and project management.</p>
                 <p>For the last couple of year I have been following the path of Full-Stack Web developer</p>
-                <p>See below list of technologies I have learn so far</p>
+                <p>See below technologies I have learnt so far:</p>
             </div>
             <ul>
                 <li><img src="media/icons/html.png" alt="HTML"></li>
@@ -92,21 +93,18 @@
     <div class="works" >
         <ul id="Works">
             <li id="CPQ">
+                <h3 class="workName">Configure | Price | Quote</h3>
                 <div class='project_description'>
                     <div class="project_text">
                         <h2>CPQ</h2>
-                        <p>Configure price quote app, buil on Low-Code Ninox platform for distribution company for comprehensive quotation preparation</p>
-                        <br>
+                        <p>Configure, Price, Quote app, buil on Low-Code for quotation preparation</p>
                         <h3>Technologies:</h3>
                         <div class = "tech">
                             <p>Low Code</p>
                             <p>|</p>
                             <p>REST API</p>
                             <p>|</p>
-                            <p>HTML</p>
-                            <p>|</p>
-                            <p>CSS</p>
-                            
+                            <p>HTML</p>                            
                         </div>
                         <br>
                         <a href="cpq.html"><img src="media/icons/external link.png" alt=""></a>
@@ -114,6 +112,7 @@
                 </div>
             </li>
             <li id="TeaLanding">
+                <h3 class="workName">Tea Cozzy landing page</h3>
                 <div class='project_description'>
                     <div class='project_text'>
                         <h2>Tea Cozzy</h2>
@@ -129,9 +128,10 @@
                     </div>
             </li>
             <li id="laundryLanding">
+                <h3 class="workName">Process Design landing page</h3>
                 <div class='project_description'>
                     <div class='project_text'>
-                        <h2>Laundry Technical Design</h2>
+                        <h2>Laundry Tech Design</h2>
                         <p>Landing page for compamny provides servises in the field of key-solution for professional laundry industry</p>
                         <h3>Technologies:</h3>
                         <div class = "tech">
@@ -142,9 +142,9 @@
                         <br>
                     <a href="https://valentynjk.github.io/LaundryDesign/" target="_blank"><img src="media/icons/external link.png" alt=""></a>
                 </div>
-                    
             </li>
             <li id='webSiteDesign'>
+                <h3 class="workName">Web Site Design</h3>
                 <div class='project_description'>
                     <div class='project_text'>
                         <h2>Web Site Design</h2>
@@ -165,26 +165,28 @@
             </li> -->
         </ul>
     </div>
-</div>
+</div> <br> <br>
 <div id='contact'>
     <section>
         <h1>Contact Me</h1>
-        <p>Would like to wrigt me, ask question, discuss somthing or just say hello? You are welcome to use the form below</p>
+        <p>Would like to write me, ask question, discuss something or just say hello? You are welcome to use the form below</p>
     </section>
     <div class='message'>
         <form action="https://formspree.io/f/mqknknak" method="POST">
-            <label for="">
-                E-mail
-                <input type="email" class='email' name="email" id=""/>
+            <label class='_email' for="">
+                Your email
+                <input type="email" class='email' name="email" id="" placeholder="Enter your email adress"/>
             </label>
-            <label for="">
-                Subject
-                <input type="text" class='subject' name="subject" id=""/>
+            <label class='_subject' for="">
+                Your subject
+                <input type="text" class='subject' name="subject" id="" placeholder="Enter Subject"/>
             </label>
-                Message
-                <textarea class='_message' name="message" id="" cols="30" rows="10"></textarea>
+            <label class='__message' for="">
+                Your message
+                <textarea class='_message' name="message" id="" cols="30" rows="10" placeholder="Hello, I am writing you to disscuss a new project. Waiting forward for your reply. Best regards"></textarea>
             <label>
                 <div class="status"></div>
+                <br>
                 <button onclick="sendMessage()" type='submit' class='submit'>Send</button>
         </form>
   
@@ -204,12 +206,7 @@
     <p>Designed and built by Valentyn Kolesnichenko. 2021</p>
 </div>
 </footer>
-
-
-
-
 <script src="scripts/scripts.js" defer></script>
-
 </body>
 </html>
 
