@@ -346,9 +346,6 @@ section {
 #Works li:hover .project_description {
     display: flex;
 }
-/* #Works li:hover .project_description {
-    display: flex;
-} */
 
 #Works li:hover .workName {
     display: none;
@@ -366,6 +363,13 @@ section {
     background-repeat: no-repeat;
     position: center;
 }
+
+/* #findHat {
+    background-image: url('../media/web_pages/find_hat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+} */
 
 #TeaLanding {
     background-image: url('../media/web_pages/tea_icon.png');
@@ -391,10 +395,7 @@ section {
 /* footer block styling */
 #contact {
     min-height: 80vh;
-    background: #f3c428;
-    z-index: -1;
-    padding: 2rem 0 2rem 0;
-    
+    background: #f3c428;  
 }
 
 #contact .message {
@@ -414,6 +415,7 @@ section {
     flex-flow: row wrap;
     justify-content: space-between;
     gap: 20px;
+    padding-bottom: 20px;
 }
 
 ._email, 
