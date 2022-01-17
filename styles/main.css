@@ -195,7 +195,7 @@ button img:hover {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 .about .text {
@@ -241,6 +241,7 @@ button img:hover {
 #background .about .text {
     background-color: #111b36be;
     margin: 0;
+    border-radius: 2px;
     box-shadow: -5px 5px 5px black;
 }
 
@@ -254,10 +255,14 @@ button img:hover {
 }
 
 #background .about button {
+    width: 200px;
+    height: 75px;
+    font-size: 1.5rem;
     border-radius: 2px;
-    height: 3rem;
-    width: 12rem;
-    background-color: #f3c428;
+    background-color: #111b36be ;
+    color: white;
+    font-weight: 600;
+    box-shadow: -5px 5px 5px black
 }
 
 /* projects block styling */
@@ -429,8 +434,7 @@ section {
     width: 100%;
 }
 
-.submit {
-    
+.submit  { 
     width: 200px;
     height: 75px;
     margin: 0 auto;
