@@ -375,12 +375,12 @@ section {
     position: center;
 }
 
-/* #findHat {
-    background-image: url('../media/web_pages/find_hat.png');
+#travelTrack {
+    background-image: url('../media/web_pages/travel_steps.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
-} */
+} 
 
 #TeaLanding {
     background-image: url('../media/web_pages/tea_icon.png');
