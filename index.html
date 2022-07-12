@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,220 +11,242 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" href="media/illustration/V_2.png"> 
+    <link rel="icon" href="media/illustration/V_2.png">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <title>Portfolio</title>
 </head>
+
 <body>
-<header>
-<div id='logo'>
-    <h1>  \ V_K /  </h1>
-</div>
-<nav class="desctop">
-    <ul>
-        <li><a href="#about">home</a></li>
-        <li><a href="#background">background</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
-    </ul>
-</nav>
-</header>
-<button id="navigation_button" onclick="openMenu()"><img src="media/icons/openMenuButton.png" alt="open"></button>
-<nav class="mobile">
-    <button id='close_button' onclick="closeMenu()"><img src="media/icons/closeMenuBar.png" alt="close"></button>
-    <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#background">background</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
-    </ul>
-</nav>
-<div id='about'>
-    <div class = 'content'>
-        <div class = "about">
-            <div class = "text">
-                <h1>Hello,</h1>
-                <h2>my name is <span>Valentyn</span></h2>
-                <br>
-                <p>I am junior software developer with experience in Low-Code process automation.
-                    Searching for the new opportunities to eliminate routine.
-                </p>
-                <br>
-                <h2 class='tagline'>Passionate to simplify hard stuff</h2>
-                </div>
+    <header>
+        <div id='logo'>
+            <h1> \ V_K / </h1>
         </div>
-        <div class = "picture">
-            <img src="media/illustration/coding3.png" alt="">
-        </div>
-    </div>
-</div>
-<div id="background">
-    <div class='content'>
-        <div class = 'picture'>
-            <img src="media/illustration/V_2.png" alt="">
-        </div>
-        <div class = 'about'>
-            <div class='text'>
-                <p><span>Hi there,</span></p> 
-                <p>thanks for <span>visiting</span></p><br>
-                <p>My name is Valentyn Kolesnichenko. I am a JavaScript developer with a Process Engineering background.
-                </p>
-                <p>I started my developing journey with building and deployment Configure | Price | Quote on Low Code. The app optimizes processes of preparing commercial quotations&invoices, document tracking and project management. It has been successfully running since the end of 2019.
-                <p>I have experience in JS, responsive web design, node.js and APIs.</p>
-                <p>I am very passionate about my journey of becoming a full-stack software engineer.</p>
-            </div>
+        <nav class="desctop">
             <ul>
-                <li><img src="media/icons/js.png" alt="JS"></li>
-                <li><img src="media/icons/node.png" alt="Node.js"></li>
-                <li><img src="media/icons/html.png" alt="HTML"></li>
-                <li><img src="media/icons/css.png" alt="CSS"></li>
-                <li><img src="media/icons/git.png" alt="GIT"></li>
-                <li><img src="media/icons/github_icon.png" alt="GitHub"></li>
+                <li><a href="#about">home</a></li>
+                <li><a href="#background">background</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
-            <form action="media/cv/CV_V.Kolesnichenko.pdf" method="get" target="_blank">
-            <button id="cv" type="submit">CV</button>
-            </form>
+        </nav>
+    </header>
+    <button id="navigation_button" onclick="openMenu()"><img src="media/icons/openMenuButton.png" alt="open"></button>
+    <nav class="mobile">
+        <button id='close_button' onclick="closeMenu()"><img src="media/icons/closeMenuBar.png" alt="close"></button>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#background">background</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+    <div id='about'>
+        <div class='content'>
+            <div class="about">
+                <div class="text">
+                    <h1>Hello,</h1>
+                    <h2>my name is <span>Valentyn</span></h2>
+                    <br>
+                    <p>I am junior software developer with experience in Low-Code process automation.
+                        Searching for the new opportunities to eliminate routine.
+                    </p>
+                    <br>
+                    <h2 class='tagline'>Passionate to simplify hard stuff</h2>
+                </div>
+            </div>
+            <div class="picture">
+                <img src="media/illustration/coding3.png" alt="">
+            </div>
         </div>
     </div>
-</div>
-
-<div id="projects">
-    <section>
-        <h1>Check out some of my work</h1>
-        <p>Some project was made as part of my current professional activity, some as a part of Codecademy course</p>
-    </section>
-    <div class="works" >
-        <ul id="Works">
-            <li id="CPQ">
-                <h3 class="workName">Configure | Price | Quote</h3>
-                <div class='project_description'>
-                    <div class="project_text">
-                        <h2>CPQ</h2>
-                        <p>Configure, Price, Quote app, built on Low-Code for quotation preparation</p>
-                        <h3>Technologies:</h3>
-                        <div class = "tech">
-                            <p>Low Code</p>
-                            <p>|</p>
-                            <p>REST API</p>
-                            <p>|</p>
-                            <p>HTML</p>                            
-                        </div>
-                        <br>
-                        <a href="cpq.html" target="_blank"><img src="media/icons/external link.png" alt=""></a>
-                    </div>
+    <div id="background">
+        <div class='content'>
+            <div class='picture'>
+                <img src="media/illustration/V_2.png" alt="">
+            </div>
+            <div class='about'>
+                <div class='text'>
+                    <p><span>Hi there,</span></p>
+                    <p>thanks for <span>visiting</span></p><br>
+                    <p>My name is Valentyn Kolesnichenko. I am a JavaScript developer with a Process Engineering
+                        background.
+                    </p>
+                    <p>I started my development journey by building and deploying Configure | Price | Quote on Low Code.
+                        The app optimizes processes of preparing commercial quotations&invoices, document tracking and
+                        project management. It has been successfully running since the end of 2019.
+                    <p>I have hands-on experience and deployed projects using JS, React, Node, REST API and Responsive
+                        Web design.</p>
+                    <p>I am very passionate about my journey of becoming a full-stack software engineer.</p>
                 </div>
-            </li>
-            <li id="travelTrack">
-                <h3 class="workName">Travel Track</h3>
-                <div class='project_description'>
-                    <div class="project_text">
-                        <h2>Travel Track</h2>
-                        <p>REST API app made on Node.js deployed on Heroku. Enter city name and get weather forecast and some places worth visiting.</p>
-                        <h3>Technologies:</h3>
-                        <div class = "tech">
-                            <p>JS</p>
-                            <p>|</p>
-                            <p>Node</p>
-                            <p>|</p>
-                            <p>REST API</p>                            
-                        </div>
-                        <br>
-                        <a href="https://travel-track-app.herokuapp.com/" target="_blank"><img src="media/icons/external link.png" alt=""></a>
-                    </div>
-                </div>
-            </li>
-            <li id="TeaLanding">
-                <h3 class="workName">Tea Cozzy landing page</h3>
-                <div class='project_description'>
-                    <div class='project_text'>
-                        <h2>Tea Cozzy</h2>
-                        <p>Landing page for Tea store. One of Codecademy portfolio projects</p>
-                        <h3>Technologies:</h3>
-                        <div class = "tech">
-                            <p>HTML</p>
-                            <p>|</p>
-                            <p>CSS</p>
-                        </div>
-                        <br>
-                    <a href="https://valentynjk.github.io/Tea_Cozy/" target="_blank"><img src="media/icons/external link.png" alt=""></a>
-                    </div>
-            </li>
-            <li id="laundryLanding" onclick="showDescription()">
-                <h3 class="workName">Laundry Tech Design</h3>
-                <div class='project_description'>
-                    <div class='project_text'>
-                        <h2>Laundry Tech Design</h2>
-                        <p>Landing page for company provides services in the field of key-solution for professional laundry industry</p>
-                        <h3>Technologies:</h3>
-                        <div class = "tech">
-                            <p>HTML</p>
-                            <p>|</p>
-                            <p>CSS</p>
-                        </div>
-                        <br>
-                    <a href="https://valentynjk.github.io/LaundryDesign/" target="_blank"><img src="media/icons/external link.png" alt=""></a>
-                </div>
-            </li>
-            <li id='webSiteDesign'>
-                <h3 class="workName">Web Site Design</h3>
-                <div class='project_description'>
-                    <div class='project_text'>
-                        <h2>Web Site Design</h2>
-                        <p>Web site design guidance. First web site was created in </p>
-                        <h3>Technologies:</h3>
-                        <div class = "tech">
-                            <p>HTML</p>
-                            <p>|</p>
-                            <p>CSS</p>
-                        </div>
-                        <br>
-                    <a href="https://valentynjk.github.io/Website_Design_System/" target="_blank"><img src="media/icons/external link.png" alt=""></a>
-                </div>
-            </li>
-        </ul>
+                <ul>
+                    <li><img src="media/icons/js.png" alt="JS"></li>
+                    <li><img src="media/icons/node.png" alt="Node.js"></li>
+                    <li><img src="media/icons/react.png" alt="React"></li>
+                    <li><img src="media/icons/redux.png" alt="Redux"></li>
+                    <li><img src="media/icons/html.png" alt="HTML"></li>
+                    <li><img src="media/icons/css.png" alt="CSS"></li>
+                    <li><img src="media/icons/git.png" alt="GIT"></li>
+                    <li><img src="media/icons/github_icon.png" alt="GitHub"></li>
+                </ul>
+                <form action="media/cv/CV_V.Kolesnichenko.pdf" method="get" target="_blank">
+                    <button id="cv" type="submit">CV</button>
+                </form>
+            </div>
+        </div>
     </div>
-</div> <br> <br>
-<div id='contact'>
-    <section>
-        <h1>Contact Me</h1>
-        <p>Would like to write me, ask question, discuss something or just say hello? You are welcome to use the form below</p>
-    </section>
-    <div class='message'>
-        <form action="https://formspree.io/f/mqknknak" method="POST">
-            <label class='_email' for="">
-                Your email
-                <input type="email" class='email' name="email" id="" placeholder="Enter your email address"/>
-            </label>
-            <label class='_subject' for="">
-                Your subject
-                <input type="text" class='subject' name="subject" id="" placeholder="Enter Subject"/>
-            </label>
-            <label class='__message' for="">
-                Your message
-                <textarea class='_message' name="message" id="" cols="30" rows="10" placeholder="Hello, I am writing you to discuss a new project. Waiting forward for your reply. Best regards"></textarea>
-            <label>
-                <div class="status"></div>
-                <br>
-                <button onclick="sendMessage()" type='submit' class='submit'>Send</button>
-        </form>
-  
-</div>
-</div>
-<footer>
-<aside>
-    <ul>
-        <li><a href="https://github.com/ValentynJK" target="_blank"><img src="media/icons/gitHub.png" alt="git"></a></li>
-        <li><a href="https://www.linkedin.com/in/valentyn-kolesnichenko/" target="_blank"><img src="media/icons/linked.png" alt="linked"></a></li>
-        <li><a href="mailto:valentynejk@gmail.com" target="_blank"><img src="media/icons/gmail.png" alt="email"></a></li>
-        <li><a href="https://www.instagram.com/valentynjk/" target="_blank"><img src="media/icons/insta.png" alt="insta"></a></li>
-    </ul>
-</aside>
-<div>
-    <p>Designed and built by Valentyn Kolesnichenko. 2022</p>
-</div>
-</footer>
-<script src="scripts/scripts.js" defer></script>
+
+    <div id="projects">
+        <section>
+            <h1>Check out some of my work</h1>
+            <p>Some project was made as part of my current professional activity, some as a part of Codecademy course
+            </p>
+        </section>
+        <div class="works">
+            <ul id="Works">
+                <li id="CPQ">
+                    <h3 class="workName">Configure | Price | Quote</h3>
+                    <div class='project_description'>
+                        <div class="project_text">
+                            <h2>CPQ</h2>
+                            <p>Configure, Price, Quote app, built on Low-Code for quotation preparation</p>
+                            <h3>Technologies:</h3>
+                            <div class="tech">
+                                <p>Low Code</p>
+                                <p>|</p>
+                                <p>REST API</p>
+                                <p>|</p>
+                                <p>HTML</p>
+                            </div>
+                            <br>
+                            <a href="cpq.html" target="_blank"><img src="media/icons/external link.png" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li id="travelTrack">
+                    <h3 class="workName">Travel Track</h3>
+                    <div class='project_description'>
+                        <div class="project_text">
+                            <h2>Travel Track</h2>
+                            <p>Full stack app with React as client and Node.js as server deployed on Heroku. Enter city
+                                name and get weather forecast and some places worth visiting.</p>
+                            <h3>Technologies:</h3>
+                            <div class="tech">
+                                <p>React</p>
+                                <p>|</p>
+                                <p>Node</p>
+                                <p>|</p>
+                                <p>REST API</p>
+                            </div>
+                            <br>
+                            <a href="https://travel-track-react.herokuapp.com/" target="_blank"><img
+                                    src="media/icons/external link.png" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li id="crwn" onclick="showDescription()">
+                    <h3 class="workName">Crown Clothing (Udemy)</h3>
+                    <div class='project_description'>
+                        <div class='project_text'>
+                            <h2>Crown Clothing</h2>
+                            <p>E-commerce web page. Part of Udemy React course (Redux, Hooks, GraphQL, Stripe,
+                                Firebase).
+                                Project is continuously updating...</p>
+                            <h3>Technologies:</h3>
+                            <div class="tech">
+                                <p>React</p>
+                                <p>|</p>
+                                <p>JS</p>
+                                <p>|</p>
+                                <p>Redux</p>
+                            </div>
+                            <br>
+                            <a href="https://crown-clothing-learning.netlify.app/" target="_blank"><img
+                                    src="media/icons/external link.png" alt=""></a>
+                        </div>
+                </li>
+                <li id="TeaLanding">
+                    <h3 class="workName">Tea Cozzy landing page</h3>
+                    <div class='project_description'>
+                        <div class='project_text'>
+                            <h2>Tea Cozzy</h2>
+                            <p>Landing page for Tea store. One of Codecademy portfolio projects</p>
+                            <h3>Technologies:</h3>
+                            <div class="tech">
+                                <p>HTML</p>
+                                <p>|</p>
+                                <p>CSS</p>
+                            </div>
+                            <br>
+                            <a href="https://valentynjk.github.io/Tea_Cozy/" target="_blank"><img
+                                    src="media/icons/external link.png" alt=""></a>
+                        </div>
+                </li>
+                <li id='webSiteDesign'>
+                    <h3 class="workName">Web Site Design</h3>
+                    <div class='project_description'>
+                        <div class='project_text'>
+                            <h2>Web Site Design</h2>
+                            <p>Web site design guidance. First web site was created in </p>
+                            <h3>Technologies:</h3>
+                            <div class="tech">
+                                <p>HTML</p>
+                                <p>|</p>
+                                <p>CSS</p>
+                            </div>
+                            <br>
+                            <a href="https://valentynjk.github.io/Website_Design_System/" target="_blank"><img
+                                    src="media/icons/external link.png" alt=""></a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div> <br> <br>
+    <div id='contact'>
+        <section>
+            <h1>Contact Me</h1>
+            <p>Would like to write me, ask question, discuss something or just say hello? You are welcome to use the
+                form below</p>
+        </section>
+        <div class='message'>
+            <form action="https://formspree.io/f/mqknknak" method="POST">
+                <label class='_email' for="">
+                    Your email
+                    <input type="email" class='email' name="email" id="" placeholder="Enter your email address" />
+                </label>
+                <label class='_subject' for="">
+                    Your subject
+                    <input type="text" class='subject' name="subject" id="" placeholder="Enter Subject" />
+                </label>
+                <label class='__message' for="">
+                    Your message
+                    <textarea class='_message' name="message" id="" cols="30" rows="10"
+                        placeholder="Hello, I am writing you to discuss a new project. Waiting forward for your reply. Best regards"></textarea>
+                    <label>
+                        <div class="status"></div>
+                        <br>
+                        <button onclick="sendMessage()" type='submit' class='submit'>Send</button>
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        <aside>
+            <ul>
+                <li><a href="https://github.com/ValentynJK" target="_blank"><img src="media/icons/gitHub.png"
+                            alt="git"></a></li>
+                <li><a href="https://www.linkedin.com/in/valentyn-kolesnichenko/" target="_blank"><img
+                            src="media/icons/linked.png" alt="linked"></a></li>
+                <li><a href="mailto:valentynejk@gmail.com" target="_blank"><img src="media/icons/gmail.png"
+                            alt="email"></a></li>
+                <li><a href="https://www.instagram.com/valentynjk/" target="_blank"><img src="media/icons/insta.png"
+                            alt="insta"></a></li>
+            </ul>
+        </aside>
+        <div>
+            <p>Designed and built by Valentyn Kolesnichenko. 2022</p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js" defer></script>
 </body>
+
 </html>
-
-

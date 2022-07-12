@@ -19,7 +19,7 @@ body {
 /* header styling. desctop */
 
 header {
-    position:absolute;
+    position: absolute;
     font-size: 16px;
     height: 7rem;
     display: flex;
@@ -27,7 +27,7 @@ header {
     width: 100%;
     z-index: 1;
     opacity: 1;
-    align-items: center;   
+    align-items: center;
 }
 
 button:hover {
@@ -73,12 +73,12 @@ button:hover {
     list-style-type: none;
     min-width: 9rem;
     max-width: 10rem;
-    flex: 1 1 ;
+    flex: 1 1;
     height: 6rem;
     border-radius: 10px;
 }
 
-.desctop ul li:hover  {
+.desctop ul li:hover {
     background-color: rgba(255, 255, 255, 0.151);
     transform: scale(1.05);
     transform-origin: center;
@@ -88,12 +88,12 @@ button:hover {
 .desctop ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    color:black;
+    color: black;
     opacity: 0.9;
     align-content: center;
 }
 
-.mobile  {
+.mobile {
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -104,7 +104,7 @@ button:hover {
     border-radius: 3px;
     height: 15rem;
     width: 13rem;
-    background-color:white;
+    background-color: white;
     z-index: 2;
 }
 
@@ -155,7 +155,7 @@ button {
 button img {
     height: 1.5rem;
     float: right;
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
 button img:hover {
@@ -167,7 +167,7 @@ button img:hover {
 #about {
     position: relative;
     z-index: -1;
-    background: linear-gradient(115deg,#111b36e3 70%, #e9cb22 20%);
+    background: linear-gradient(115deg, #111b36e3 70%, #e9cb22 20%);
 }
 
 .content {
@@ -191,7 +191,7 @@ button img:hover {
     min-width: 30%;
 }
 
- .picture img {
+.picture img {
     margin: 6rem 0 7rem 0;
     width: 720px;
 }
@@ -254,9 +254,9 @@ button img:hover {
 #background .about ul {
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -265,7 +265,7 @@ button img:hover {
     height: 75px;
     font-size: 1.5rem;
     border-radius: 2px;
-    background-color: #111b36be ;
+    background-color: #111b36be;
     color: white;
     font-weight: 600;
     box-shadow: -5px 5px 5px black
@@ -278,11 +278,11 @@ button img:hover {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: flex-start;  
+    justify-content: flex-start;
 }
 
 section {
-    height: 200px; 
+    height: 200px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -344,7 +344,7 @@ section {
     text-align: center;
 }
 
-.project_description img{
+.project_description img {
     width: 1.75rem;
 }
 
@@ -362,7 +362,7 @@ section {
     display: none;
 }
 
-#Works li:hover  {
+#Works li:hover {
     transform: scale(1.05);
     transform-origin: center;
     transition-duration: 200ms;
@@ -380,7 +380,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
-} 
+}
 
 #TeaLanding {
     background-image: url('../media/web_pages/tea_icon.png');
@@ -389,8 +389,8 @@ section {
     position: center;
 }
 
-#laundryLanding {
-    background-image: url('../media/web_pages/design_icon.png');
+#crwn {
+    background-image: url('../media/web_pages/e-commerce.svg');
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
@@ -406,7 +406,7 @@ section {
 /* footer block styling */
 #contact {
     min-height: 80vh;
-    background: #f3c428;  
+    background: #f3c428;
 }
 
 #contact .message {
@@ -429,7 +429,7 @@ section {
     padding-bottom: 20px;
 }
 
-._email, 
+._email,
 ._subject {
     min-width: 285px;
     max-width: 500px;
@@ -440,7 +440,7 @@ section {
     width: 100%;
 }
 
-.submit  { 
+.submit {
     width: 200px;
     height: 75px;
     margin: 0 auto;
@@ -465,7 +465,7 @@ aside {
     bottom: 40px;
     left: 40px;
     right: auto;
-    
+
 }
 
 aside ul li {
@@ -480,7 +480,8 @@ aside ul li {
 }
 
 aside ul li:hover {
-    background-color: #f3c428;;
+    background-color: #f3c428;
+    ;
     opacity: 0.9;
 }
 
@@ -494,4 +495,3 @@ aside ul {
 aside img {
     width: 1.75rem;
 }
-
